@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+
+<body>
+    <div class="account_create">
+        <form action="submit" class="login_form">
+            <div>
+                <label for="" class="label">Username</label>
+                <input type="text" placeholder="Username" class="input username input_field">
+            </div>
+            <div>
+                <label for="" class="label">Password</label>
+                <input type="password" placeholder="Name" class="input password input_field">
+            </div>
+            <input type="submit" class="sign-in  green_button" value="Login">
+            <div><a href="Create Account\create account.html" class="link">New user? Create account.</a></div>
+        </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>

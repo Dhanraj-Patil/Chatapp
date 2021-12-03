@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+body {
+    background-color: beige;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+.mask {
+    width: 100%;
+    height: 100vh;
+}
+
+.chat_window {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    margin: 0 auto;
+    overflow: auto;
+    border-radius: 10px;
+    border: 2px rgb(241, 241, 241) solid;
+}
+
+.contents {
+    border: 2px red solid;
+    border-radius: 10px;
+    height: max-content;
+    width: max-content;
+    padding: 20px;
+    /* margin: 30px auto; */
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+form {
+    margin: 30px;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+    /* color: white; */
+}
+
+.render_message {
+    clear: both;
+    margin: 10px 10px 0 10px;
+    padding: 7px;
+    border-radius: 10px;
+    max-width: 300px;
+    height: auto;
+    overflow: auto;
+}
+
+.label {
+    clear: both;
+    float: left;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.input {
+    width: 300px;
+}
+
+.account_create {
+    /* height: 600px; */
+    height: max-content;
+    width: 400px;
+    padding: 30px 50px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.login_form {
+    margin: 0;
+}
+
+.create_account {
+    margin: 0;
+}
+
+.chat_input {
+    width: 79%;
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    height: 40px;
+    font-size: 1.1em;
+    padding: 10px;
+    border-radius: 90px;
+    border: none;
+    margin-right: 0.5%;
+    outline: none;
+    /* border: 2px solid pink; */
+    /* border: 2px solid green; */
+}
+
+.chat-submit {
+    width: 19%;
+    box-sizing: border-box;
+    border-radius: 90px;
+    height: 40px;
+    border: none;
+    /* background-color: pink; */
+    background-color: green;
+    margin-left: 0.5%;
+    font-weight: bold;
+    font-size: 1.1em;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.green_button {
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-sizing: border-box;
+    border-radius: 90px;
+    padding: 5px 10px;
+    margin: 20px;
+}
+
+.input_field {
+    box-sizing: border-box;
+    border-radius: 90px;
+    height: 30px;
+    /* font-size: 1em; */
+    border: none;
+    background-color: rgb(233, 233, 245);
+    padding: 10px;
+    border: 2px solid rgb(220, 220, 241);
+}
+
+.chat_form {
+    margin: 20px 0 0 0;
+}
+
+.link {
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bolder;
+}
+
+@media (min-width:200px) and (max-width:500px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+    }
+    .contents {
+        width: 100%;
+        border: none;
+        /* padding: 10px 10px; */
+        margin: 0;
+        position: relative;
+    }
+    .chat_window {
+        width: 100%;
+        height: 90vh;
+        /* margin: 10px 10px 10px 10px; */
+        box-sizing: border-box;
+        position: relative;
+    }
+}

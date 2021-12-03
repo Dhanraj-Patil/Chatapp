@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/89e3e7aa-0992-4b88-98a2-80939c54681b/resourceGroups/GlobalChat/providers/Microsoft.Web/sites/GlobalChat",
+    "appService.deploySubpath": "."
+}
