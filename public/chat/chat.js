@@ -1,5 +1,11 @@
 const socket = io()
 
+socket.emit('online_users')
+socket.on('online_users', (data) => {
+    var online_users = document.querySelector('.online-users');
+    online_users.innerHTML = `Online Users: ${data.users_online}`;
+})
+
 const chat = document.querySelector('.chat-submit')
 const input = document.querySelector('.chat_input')
 

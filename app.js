@@ -35,8 +35,12 @@ con.connect((err) => {
 })
 
 
-
+var online_users = 0;
 io.on('connection', socket => {
+
+    online_users = online_users + 1;
+    io.emit("online_users", { users_online: online_users })
+
     console.log('Some client connected')
     let room = ''
 
@@ -97,7 +101,12 @@ io.on('connection', socket => {
         room = data.Room
             // socket.join(data.room)
     })
+    socket.on("disconnect", () => {
+        online_users = online_users - 1;
+        io.emit("online_users", { users_online: online_users })
+    })
 })
+
 
 server.listen(port, () => {
     console.log(`Server running on port: ${port}`)
