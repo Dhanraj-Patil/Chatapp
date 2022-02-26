@@ -15,15 +15,15 @@ let room = ''
 
 
 let admin = JSON.parse(localStorage.getItem('user'))
-console.log(admin)
+    // console.log(admin)
 userName = admin.username
-console.log(userName)
+    // console.log(userName)
 socket.emit('user', { username: userName, Room: room })
 
 
 socket.on('user', (data) => {
     id = data.ID;
-    console.log(data)
+    // console.log(data)
 })
 
 chat.addEventListener("click", (event) => {
@@ -51,6 +51,6 @@ const renderMessage = (data) => {
 
 
 socket.on('chat', (data) => {
-    console.log(`From Server: ${data.ID}, ${data.message}`)
+    // console.log(`From Server: ${data.ID}, ${data.message}`)
     renderMessage({ username: data.username, ID: data.ID, message: data.message })
 })

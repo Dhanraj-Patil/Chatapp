@@ -1,3 +1,9 @@
+// require('appmetrics-dash').attach();
+
+var appmetrics = require('appmetrics-dash');
+var monitoring = appmetrics.monitor();
+
+
 const express = require('express')
 const app = express()
 const server = require('http').createServer(app)
@@ -8,18 +14,11 @@ const { send } = require('process')
 const sql = require('mysql2')
 const fs = require('fs')
 
+// var appmetrics = require('appmetrics');
+// var monitoring = appmetrics.monitor();
 
 app.use(express.static(path.join(__dirname + '/public')))
 
-
-
-// var con = sql.createConnection({
-//     host: "localhost",
-//     user: "Dhanraj",
-//     password: "djp111234",
-//     database: "chat",
-//     insecureAuth: true
-// });
 
 var con = sql.createConnection({
     host: "globalchat-data-server.mysql.database.azure.com",
